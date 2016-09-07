@@ -1,0 +1,9 @@
+<h2>Sponsorships</h2>
+
+<% @sponsorships.each do |sponsorship| %>
+  <div class="place">
+    <%= content_tag(:h2, sponsorship["title"]) %>
+    <%= sponsorship["description"].html_safe %>
+  </div>
+  <hr />
+<% end %>

@@ -1,0 +1,9 @@
+<h2>Projects</h2>
+
+<% @projects.each do |project| %>
+  <div class="project">
+    <%= content_tag(:h2, project["title"]) %>
+    <%= project["description"].html_safe %>
+  </div>
+  <hr />
+<% end %>

@@ -1,0 +1,11 @@
+<h2>Campaigns Index</h2>
+
+<%# @campaigns %>
+
+<% @campaigns.each do |campaign| %>
+  <div class="place">
+    <%= content_tag(:h2, campaign["title"]) %>
+    <%= link_to( "URL", campaign["url"] ) %>
+  </div>
+  <hr />
+<% end %>

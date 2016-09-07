@@ -1,0 +1,9 @@
+<h2>Places</h2>
+
+<% @places.each do |place| %>
+  <div class="place">
+    <%= content_tag(:h2, place["title"]) %>
+    <%= place["description"].html_safe %>
+  </div>
+  <hr />
+<% end %>

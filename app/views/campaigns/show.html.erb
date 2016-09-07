@@ -1,0 +1,11 @@
+<%# @campaign %>
+<%= content_tag(:h2, @campaign[0]["title"] ) %>
+<%= content_tag(:p, @campaign[0]["short_description"] ) %>
+<%= content_tag(:p, "Goal Amount: #{@campaign[0]['goal_amount']}" ) %>
+<%= content_tag(:p, "Total: #{@campaign[0]['total']}" ) %>
+
+<%= @campaign %>
+
+<br />
+<br />
+<%= link_to("<< Back to all Campaigns", campaigns_path ) %>

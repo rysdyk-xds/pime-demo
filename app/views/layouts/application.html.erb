@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PimeConcept</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/places">Places</a></li>
+    <li><a href="/sponsorships">Sponsorships</a></li>
+    <li><a href="/campaigns">Campaigns</a></li>
+    <li><a href="/donate">Donate</a></li>
+  </ul>
+
+<%= yield %>
+
+</body>
+</html>
