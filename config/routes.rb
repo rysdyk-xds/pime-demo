@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+PimeConcept::Application.routes.draw do
 
   get 'donate' => "donate#index"
 
