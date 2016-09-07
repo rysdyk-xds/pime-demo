@@ -20,7 +20,7 @@ gem 'pg'
 
 # Assets
 gem 'unf'
-gem 'asset_sync'
+# gem 'asset_sync'
 
 gem 'jquery-rails'
 gem 'jquery-historyjs'
